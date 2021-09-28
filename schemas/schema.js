@@ -9,6 +9,7 @@ import blockContent from './blockContent'
 import category from './category'
 import post from './post'
 import author from './author'
+import contact from './contact'
 import figure from './figure'
 import instagram from './instagram'
 import youtube from './youtube'
@@ -35,6 +36,7 @@ export default createSchema({
     blockContent,
     codepen,
     comment,
+    contact,
     figure,
     instagram,
     blogSettings,
