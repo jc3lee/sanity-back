@@ -18,6 +18,7 @@ import twitter from './twitter'
 import codepen from './codepen'
 import comment from './comment'
 import blogSettings from './blogSettings'
+import item from './item'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -43,5 +44,6 @@ export default createSchema({
     tiktok,
     twitter,
     youtube,
+    item,
   ]),
 })
