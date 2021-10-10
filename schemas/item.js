@@ -25,10 +25,17 @@ export default {
       inputComponent: ItemId,
     },
     {
-      title: "Image",
-      name: "image",
-      type: "image",
-      options: { hotspot: true },
+      title: "Images",
+      name: "images",
+      type: "array",
+      of: [
+        {
+          title: "Image",
+          name: "image",
+          type: "image",
+          options: { hotspot: true },
+        },
+      ],
     },
     {
       title: "Description",
@@ -84,7 +91,7 @@ export default {
     select: {
       title: "title",
       pricing0: "pricing.0",
-      image: "image",
+      image: "images.0",
     },
     prepare(selection) {
       const { image, title, pricing0, } = selection
